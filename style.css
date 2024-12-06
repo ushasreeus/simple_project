@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #FFB6C1, #DDA0DD, #87CEFA, #00CED1); /* Unicorn Colors Gradient */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #003366; /* Navy Blue for headings */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Search Box */
+.search-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #003366; /* Navy Blue border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #FF4081; /* Pink focus border */
+}
+
+/* Filters */
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters label {
+    font-size: 16px;
+    color: #003366; /* Navy Blue */
+}
+
+.filters select {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #003366; /* Navy Blue border */
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.filters select:focus {
+    outline: none;
+    border-color: #FF4081; /* Pink focus border */
+}
+
+/* Results Display */
+#searchResults {
+    margin-top: 20px;
+}
+
+.result {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #003366; /* Navy Blue border */
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.result:hover {
+    background-color: #FFEBEE; /* Light Pink hover effect */
+}
+
+.result h3 {
+    color: #003366; /* Navy Blue title */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.result p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* No Results */
+#searchResults p {
+    color: #FF4081; /* Pink color for 'No results found' */
+    font-size: 18px;
+}
+
+/* Mobile-friendly styling */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .search-box input,
+    .filters select {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Search Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Blog/Articles</h1>
+        
+        <!-- Search box -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search articles..." onkeyup="filterResults()">
+        </div>
+        
+        <!-- Filter options -->
+        <div class="filters">
+            <label for="filterCategory">Category:</label>
+            <select id="filterCategory" onchange="filterResults()">
+                <option value="All">All</option>
+                <option value="Technology">Technology</option>
+                <option value="Health">Health</option>
+                <option value="Travel">Travel</option>
+            </select>
+        </div>
+
+        <!-- Search results -->
+        <div id="searchResults">
+            <!-- Results will be displayed here dynamically -->
+        </div>
+    </div>
+    <p>Check out my portfolio: <a href="https://github.com/ushasreeus/ushasree" target="_blank">GitHub Portfolio</a></p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
